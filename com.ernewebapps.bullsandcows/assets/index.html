@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html class="ui-mobile">
+<head>
+<base href="">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="jquery.mobile.css">
+<link rel="stylesheet" type="text/css" href="bullsandcows.css">
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="storage.js"></script>
+<script type="text/javascript" src="bullsandcows.js"></script>
+<script type="text/javascript" src="jquery.mobile.js"></script>
+</head>
+<body class="ui-mobile-viewport">
+	<div id="main" class="ui-page ui-body-c ui-page-active"
+		data-role="page" style="min-height: 320px;">
+		<!--Header-->
+		<div class="ui-bar-a ui-header" data-role="header" role="banner"
+			data-theme="b">
+			<h1 style="text-align: left; margin-left: 10px;" tabindex="0"
+				role="heading" aria-level="1">
+				<b style="color: yellow;">T</b>oros & <b style="color: yellow;">V</b>acas
+			</h1>
+
+			<div class="ui-btn-right" data-role="controlgroup"
+				data-type="horizontal">
+				<a id="pnt-wrapper" data-role="button" data-transition="none"
+					class="ui-control-inactive" data-theme="b">_</a> <a href=""
+					data-role="button" data-rel="dialog" data-transition="none"
+					data-icon="refresh" data-theme="b" onclick="game.newGame()">nuevo</a>
+				<a href="" data-role="button" data-rel="dialog"
+					data-transition="none" data-icon="info" data-theme="b"
+					onclick="game.aboutUs()">info</a>
+			</div>
+		</div>
+		<!--Content-->
+		<div class="ui-content" data-role="content" role="main" data-theme="b">
+			<div class="ui-grid-a">
+				<div id="numberPlace" class="ui-block-a">
+					<div class="ui-grid-c">
+						<div class="ui-block-a">
+							<div id="number-1" class="ui-bar ui-bar-c"
+								onclick="game.clearElValue(this)">_</div>
+						</div>
+						<div class="ui-block-b">
+							<div id="number-2" class="ui-bar ui-bar-c"
+								onclick="game.clearElValue(this)">_</div>
+						</div>
+						<div class="ui-block-c">
+							<div id="number-3" class="ui-bar ui-bar-c"
+								onclick="game.clearElValue(this)">_</div>
+						</div>
+						<div class="ui-block-d">
+							<div id="number-4" class="ui-bar ui-bar-c"
+								onclick="game.clearElValue(this)">_</div>
+						</div>
+					</div>
+				</div>
+				<div id="btnGrpNumberPlace" class="ui-block-b">
+					<div class="ui-grid-a">
+						<div class="ui-block-a">
+							<a data-role="button" data-icon="delete" data-theme="b"
+								data-iconpos="notext" class="ui-btn-right"
+								onclick="game.clearValues()"></a>
+						</div>
+						<div class="ui-block-b">
+							<a data-role="button" data-icon="check" data-theme="b"
+								data-iconpos="notext" class="ui-btn-right"
+								onclick="game.tryGuess()"></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="target"></div>
+		</div>
+		<!--Footer-->
+		<div data-position="fixed" data-role="footer"
+			class="segmented-control" data-theme="b">
+			<div data-role="controlgroup" data-type="horizontal">
+				<a id="btn-0" href="#" data-role="button"
+					onclick="game.onDigitBtnClick(this)">0</a> <a id="btn-1" href="#"
+					data-role="button" onclick="game.onDigitBtnClick(this)">1</a> <a
+					id="btn-2" href="#" data-role="button"
+					onclick="game.onDigitBtnClick(this)">2</a> <a id="btn-3" href="#"
+					data-role="button" onclick="game.onDigitBtnClick(this)">3</a> <a
+					id="btn-4" href="#" data-role="button"
+					onclick="game.onDigitBtnClick(this)">4</a> <a id="btn-5" href="#"
+					data-role="button" onclick="game.onDigitBtnClick(this)">5</a> <a
+					id="btn-6" href="#" data-role="button"
+					onclick="game.onDigitBtnClick(this)">6</a> <a id="btn-7" href="#"
+					data-role="button" onclick="game.onDigitBtnClick(this)">7</a> <a
+					id="btn-8" href="#" data-role="button"
+					onclick="game.onDigitBtnClick(this)">8</a> <a id="btn-9" href="#"
+					data-role="button" onclick="game.onDigitBtnClick(this)">9</a>
+
+			</div>
+		</div>
+	</div>
+</body>
+</html>
