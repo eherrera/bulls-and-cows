@@ -1,0 +1,74 @@
+.segmented-control {
+	text-align: center;
+}
+
+.segmented-control .ui-controlgroup {
+	margin: 0.2em;
+}
+
+.ui-control-active,.ui-control-inactive {
+	border-style: solid;
+	border-color: gray;
+}
+
+.ui-control-active {
+	background: #BBB;
+}
+
+.ui-control-inactive {
+	background: #DDD;
+}
+
+.ui-content {
+	min-height: inherit;
+}
+
+.ui-dialog-background {
+	opacity: 0.5;
+	display: block !important;
+	-webkit-transition: opacity 0.5s ease-in;
+}
+
+.ui-dialog-background.pop.in {
+	opacity: 1;
+	-webkit-transition: opacity 0.5s ease-in;
+}
+
+.ui-dialog {
+	min-height: 100% !important;
+	background: transparent !important;
+}
+
+.ui-header .ui-title,.ui-footer .ui-title{
+	margin-right: 0 !important;
+	margin-left: 0 !important;
+}
+
+/* Set 2-column grid to 25/75% */
+#numberPlace {
+	width: 75%;
+}
+
+#btnGrpNumberPlace {
+	width: 25%;
+}
+
+.ui-btn-right {
+	float: right;
+}
+
+.ui-bar-c {
+	height: 100%;
+	text-align: center;
+}
+
+#target {
+	padding-top: 1px;
+}
+
+.ui-grid-d .ui-bar-b{
+	padding-left:0 !important;
+	padding-right:0 !important;
+	text-align: center;
+	color: yellow;
+}
